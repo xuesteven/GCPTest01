@@ -18,7 +18,7 @@ def run():
 
    p = beam.Pipeline(argv=argv)
    input = 'gs://{0}/test01.txt'.format(BUCKET)
-   output_prefix = 'gs://{0}/test01'.format(BUCKET)
+   output_prefix = 'gs://{0}/test01/output'.format(BUCKET)
 
    # find all lines that contain the searchTerm
    (p
