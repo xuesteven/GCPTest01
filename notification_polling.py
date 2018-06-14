@@ -52,7 +52,7 @@ import argparse
 import json
 import time
 
-from google.cloud import pubsub_v1
+from google.cloud import pubsub
 
 
 def summarize(message):
