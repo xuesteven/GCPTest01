@@ -101,7 +101,7 @@ def summarize(message):
 def poll_notifications(project, subscription_name):
     """Polls a Cloud Pub/Sub subscription for new GCS events for display."""
     # [BEGIN poll_notifications]
-    subscriber = pubsub_v1.SubscriberClient()
+    subscriber = pubsub.SubscriberClient()
     subscription_path = subscriber.subscription_path(
         project, subscription_name)
 
