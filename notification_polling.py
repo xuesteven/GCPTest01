@@ -85,7 +85,7 @@ def summarize(message):
     if payload_format == 'JSON_API_V1':
         object_metadata = json.loads(data)
         size = object_metadata['size']
-        content_type = object_metadata['contentType']
+        content_type = object_metadata['contentType']+'test'
         metageneration = object_metadata['metageneration']
         description += (
             '\tContent type: {content_type}\n'
