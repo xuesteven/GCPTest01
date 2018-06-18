@@ -61,7 +61,7 @@ def summarize(message):
     attributes = message.attributes
 
     event_type = attributes['eventType']
-    bucket_id = attributes['bucketId'] +1 
+    bucket_id = attributes['bucketId'] 
     object_id = attributes['objectId']
     generation = attributes['objectGeneration']
     description = (
